@@ -9,7 +9,7 @@ export const server_calls = {
             headers: {
                 'Content-Type': 'application/json',
                 'x-access-token': `Bearer ${token}`,
-                'Access-Control-Allow-Origin': 'https://certain-aeolian-yard.glitch.me'
+                'Access-Control-Allow-Origin': 'https://certain-aeolian-yard.glitch.me',
             },
         });
 
@@ -24,14 +24,14 @@ export const server_calls = {
     create: async (data: any = {} ) => {
         const response = await fetch(`https://certain-aeolian-yard.glitch.me/api/my_coffees`,
         {
-            method: "POST",
+            method: 'POST',
             mode: 'cors',
             headers: {
                 'Content-Type': 'application/json',
                 'x-access-token': `Bearer ${token}`,
-                'Access-Control-Allow-Origin': 'http://localhost:5173'
-            },
-            body: JSON.stringify(data)
+                'Access-Control-Allow-Origin': 'https://certain-aeolian-yard.glitch.me',
+                },
+            body: JSON.stringify(data),
         });
 
         if (!response.ok) {
@@ -42,7 +42,7 @@ export const server_calls = {
     },
 
     update: async (id: string, data: any = {}) => {
-        const response = await fetch(`https://certain-aeolian-yard.glitch.me//api/my_coffees/${id}`,
+        const response = await fetch(`https://certain-aeolian-yard.glitch.me/api/my_coffees/${id}`,
         {
             method: "POST",
             mode: 'cors',
@@ -62,7 +62,7 @@ export const server_calls = {
     },
 
     delete: async (id:string) => {
-        const response = await fetch(`https://certain-aeolian-yard.glitch.me//api/my_coffees/${id}`,
+        const response = await fetch(`https://certain-aeolian-yard.glitch.me/api/my_coffees/${id}`,
         {
             method: "DELETE",
             mode: 'cors',

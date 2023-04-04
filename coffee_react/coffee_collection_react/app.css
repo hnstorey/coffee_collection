@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: rgb(199, 159, 90);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: floralwhite;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: floralwhite;
+}
+
+a:hover {
+    color:darkgoldenrod 
+}
+
+button {
+    color: black;
+    background-color: antiquewhite;
+}
+
+button:hover {
+    color:darkgoldenrod;
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type='submit'] {
+    border: none;
+    background-color: antiquewhite;
+}
+
+input[type='submit']:hover {
+    color: darkgoldenrod;
+}
+
+.home {
+    position: fixed;
+    color: floralwhite;
+}
+
+.imagediv {
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+}
+
+.navbar2 {
+    display: flex;
+}
+
+.navlink {
+    font-weight:bold;
+    font-variant: small-caps;
+    font-size: x-large;
+}
+
+.navblock {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdownbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 2em;
+}
+
+.dropnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.menubutton {
+    border-radius: 2em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+
+.menubuttonselect {
+    display: flex;
+    place-items: center;
+    color: black;
+}
+
+.loginButton {
+    border-radius: 3em;
+    padding: 0.5em;
+}
+
+.logoutButton {
+    border-radius: 3em;
+    padding: 0.5em;
+}
+
+.submitButton {
+    border-radius: 3em;
+    padding: 0.5em;
+
+}
+
+.modalbutton {
+    border-radius: 2em;
+    margin: 1em;
+    padding: 0.5em;
+    flex-direction: row;
+    place-items: center;
+    color: black;
+}
+
+.cupboardDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
